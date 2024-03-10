@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
  
   <groupId>com.cloudacademy.devops</groupId>
-  <artifactId>java21-junit5-archetype</artifactId>
+  <artifactId>java21-springboot-archetype</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 </project>
