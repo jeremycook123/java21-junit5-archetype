@@ -9,18 +9,58 @@
   <version>${version}</version>
   <packaging>jar</packaging>
 
+	<name>${project.artifactId}</name>
+	<description>SpringBoot Demo Project</description>
+	<organization>
+		<name>CloudAcademy</name>
+		<url>https://cloudacademy.com</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Jeremy Cook</name>
+			<email>jeremy.cook@cloudacademy.com</email>
+			<url>https://www.linkedin.com/in/jeremycook123/</url>
+			<organization>CloudAcademy</organization>
+			<organizationUrl>https://cloudacademy.com</organizationUrl>
+			<roles>
+				<role>Lead Content Architect</role>
+				<role>DevOps - Solutions Architect</role>
+				<role>Success Services</role>
+			</roles>
+		</developer>
+	</developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
     <maven.compiler.testTarget>${maven.compiler.testSource}</maven.compiler.testTarget>
+    <springboot.version>3.2.3</springboot.version>
     <junit.jupiter.version>5.7.0</junit.jupiter.version>
     <junit.platform.version>1.7.0</junit.platform.version>
     <mainClass>${package}.App</mainClass>
   </properties>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.3</version>
+    <relativePath />
+  </parent>
+
   <dependencies>
+    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+      <version>${springboot.version}</version>
+    </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<version>${springboot.version}</version>
+		</dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
